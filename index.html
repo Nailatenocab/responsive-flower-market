@@ -7,19 +7,20 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header class="max-w-6xl">
-        <nav class="nav-bar flex justify-between items-center">
-            <div class="nav-logo">
+    <header class="max-w-6xl m-auto">
+        <nav class="lg:nav-bar flex justify-between items-center ">
+            <div class="md:nav-logo">
                 <img src="assets/logo.png" alt="">
             </div>
             
                 
-            <ul class="nav-link flex mr-10 justify-between items-center">
-                <li class="list-none flex justify-between">
+            <ul class="lg:nav-link flex mr-10 justify-between items-center">
+                <li class="list-none grid grid-cols-5">
                     <a href=""class="font-bold text-sm">Home</a>
                      <a href=""class="text-sm">Shop</a>
                       <a href=""class="text-sm">About us</a>
-                       <img class="w-5" src="assets/shopping-cart.png" alt="">($56)
+                       
+                      <img class="w-5" src="assets/shopping-cart.png" alt="">($56)
                 </li>
             </ul>
 
@@ -30,7 +31,7 @@
             <br>
              <h1 class="w-2xl h-2.5 text-3xl text-black font-serif">FRESH FLOWERS</h1><br>
 
-             <p CLASS="banner-description font-inter text-sm">
+             <p CLASS="banner-description font-inter text-gray-400 text-sm">
              Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. 
             </P>
         </div>
@@ -40,15 +41,15 @@
             </div>
         </div>
     </header>
-    <main class="max-w-6xl m-3 ">
+    <main class="max-w-6xl m-auto ">
         <section>
            <div class="text-center" >
              <h1 class="product-title text-3xl ">
                 <span class="text-orange-400 font-bold font-serif">Our</span>
                 <span class="font-bold font-serif">Plants</span></h1>
-            <p class="product-desc font-inter text-sm text-gray-400">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+            <p class="product-desc font-inter text-sm text-gray-400 text-center">Indulge your senses with the beauty and fragrance of our fresh flower shop.<br> From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
            </div>
-           <div class="card-section grid grid-cols-4 justify-center">
+           <div class="card-section lg:grid grid-cols-4 justify-center md:grid grid-cols-2">
            <div class="card-container m-1.5 ">
             <img src="assets/sample-flower-image.png" alt="">
             <p class="product-details">Lily blossom</p>
@@ -110,14 +111,14 @@
            </div>
         </section>
         <section>
-            <div class="customer-review grid grid-cols-3 ">
+            <div class="customer-review lg:grid grid-cols-3 md:grid grid-cols-1 ">
                 <div class="customer-image-1">
                    
                     
                      <img src="assets/flower-store.png" alt="">
                     </div>
                      <div class="customer-image-2">
-                      <img class="-ml-32" src="assets/trusted-badge.png" alt="">
+                      <div class="lg"><img class="-ml-32 -mt-10" src="assets/trusted-badge.png" alt=""></div>
                 </div>
 
                 
@@ -150,7 +151,7 @@
 
                 </p>
             </div>
-            <div class="deals-image grid grid-cols-3 gap-1">
+            <div class="deals-image lg:grid grid-cols-3 md:grid grid-cols-1 ">
                 <div>
 
               <div class="bg-[url('/assets/deal-bloom.png')] bg-no-repeat bg-center bg-cover h-52 w-2xs text-white font-bold text-center p-10 rounded-2xl">
@@ -172,7 +173,7 @@
             </div>
         </section>
         <section>
-            <Div class="bg-[url('/assets/news-letter-bg.png')] bg-cover bg-center bg-no-repeat h-[533px] w-7xl mt-4 ">
+            <Div class="bg-[url('/assets/news-letter-bg.png')] bg-cover bg-center bg-no-repeat h-[533px] w-auto mt-4">
                 <h1 class="text-white font-bold text-4xl text-center p-28 font-serif">Join the colorful Bunch</h1>
                <div class="text-center">
                 <input type="email" placeholder="Your e-mail" class="w-2xs p-2 ml-7 border bg-amber-50 ">
